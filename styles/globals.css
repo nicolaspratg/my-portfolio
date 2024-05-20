@@ -14,3 +14,9 @@
     content: "";
   }
 }
+
+@layer utilities {
+  .bg-custom-gradient {
+    background: linear-gradient(to bottom, black 60%, #831ea3 100%);
+  }
+}
