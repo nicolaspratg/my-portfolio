@@ -13,10 +13,14 @@
     @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block after:absolute after:h-[3px] after:bg-[#831ea3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
     content: "";
   }
+
+  .heading{
+    @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold;
+  }
 }
 
 @layer utilities {
   .bg-custom-gradient {
-    background: linear-gradient(to bottom, black 60%, #831ea3 100%);
+    background: linear-gradient(to bottom, black 50%, #831ea3 100%);
   }
 }
