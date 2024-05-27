@@ -35,9 +35,9 @@ const About = () => {
             alt="user"
             layout="fill"
             objectFit="contain"
-            className="relative z-[11] w-[100%] h-[100%] object-contain"
+            className="relative z-[11] w-[100%] h-[100%] object-contain rounded"
           />
-          <div className="absolute z-[10] w-[100%] h-[100%] bg-[#831ea3] top-[-2rem] right-[-2rem]"></div>
+          <div className="absolute z-[10] w-[100%] h-[100%] bg-[#831ea3] top-[-2rem] right-[-2rem] rounded"></div>
         </div>
       </div>
     </div>
