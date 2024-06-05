@@ -15,10 +15,10 @@ const Hero = () => {
           </h1>
           <TextEffect />
           <p className="mt-[2rem] text-[18px] text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ad
-            temporibus blanditiis laborum quia, consectetur reprehenderit.
-            Ducimus, ut magnam aspernatur laboriosam, eligendi itaque ipsa
-            explicabo labore nam reprehenderit odio ex.
+            I'm Nicolás de Prat Gay, a 25-year-old web developer passionate
+            about creating engaging, functional online experiences. Since
+            starting in 2023, I've specialized in dynamic, responsive websites
+            that ensure seamless user experiences.
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
             <a href="/files/CV.pdf" download="CV - Nicoas de Prat Gay.pdf">

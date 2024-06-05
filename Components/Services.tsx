@@ -19,8 +19,10 @@ const Services = () => {
               Frontend
             </h1>
             <p className="text-[15px] font-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              quas est excepturi dicta deleniti quidem voluptatem facilis.
+              Crafting engaging user interfaces is my strength. With JavaScript,
+              React, TypeScript, and Tailwind CSS, I bring creativity to build
+              dynamic and visually appealing UIs. Ensuring responsiveness across
+              devices.
             </p>
           </div>
         </div>
@@ -30,8 +32,10 @@ const Services = () => {
             Backend
           </h1>
           <p className="text-[15px] font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            quas est excepturi dicta deleniti quidem voluptatem facilis.
+            In backend, I use Node.js and Express.js to create robust
+            server-side applications, managing business logic and data
+            efficiently. With PostgreSQL, I optimize database schemas for better
+            performance and scalability.
           </p>
         </div>
         <div className="bg-[#290034ba] hover:scale-110 transform transition-all duration-300 hover:rotate-6 uppercase font-semibold text-center p-[2rem] rounded">
@@ -40,8 +44,9 @@ const Services = () => {
             Fullstack
           </h1>
           <p className="text-[15px] font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            quas est excepturi dicta deleniti quidem voluptatem facilis.
+            As a full stack developer, I deliver end-to-end web solutions,
+            blending frontend and backend expertise to craft elegant interfaces
+            and seamless server-side integration across your application.
           </p>
         </div>
       </div>
