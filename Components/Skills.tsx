@@ -4,7 +4,7 @@ import SkillsLanguage from "./SkillsLanguage";
 
 const Skills = () => {
   return (
-    <div className="pt-[4rem] md:pt-[8rem] pb-[5rem]">
+    <div data-aos="fade-right" className="pt-[4rem] md:pt-[8rem] pb-[5rem]">
       <h1 className="heading">
         My <span className="text-[#831ea3]">Skills</span>
       </h1>

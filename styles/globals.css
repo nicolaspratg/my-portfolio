@@ -21,6 +21,6 @@
 
 @layer utilities {
   .bg-custom-gradient {
-    background: linear-gradient(to bottom, black 50%, #831ea3 100%);
+    background: linear-gradient(to bottom, black 50%, #831ea3 130%);
   }
 }

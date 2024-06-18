@@ -19,9 +19,6 @@ const JobExperience = ({ name, role, image, description }: Props) => {
         objectFit="contain"
         className="mx-auto mb-[2rem] rounded"
       />
-      {/* <div className="flex items-center mx-auto">
-        
-      </div> */}
       <h1 className="text-[25px] text-white mt-[1rem]"></h1>
       <p className="text-[20px] text-white opacity-90 mt-[0.5rem]">{name}</p>
       <p className="text-[18px] text-white opacity-75 mt-[0.5rem]">{role}</p>

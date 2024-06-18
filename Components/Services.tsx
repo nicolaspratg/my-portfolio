@@ -12,7 +12,7 @@ const Services = () => {
         My <span className="text-[#831ea3]">Services</span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center h-[100%] gap-[3rem] mt-[4rem] text-white">
-        <div>
+        <div data-aos="fade-right">
           <div className="bg-[#290034ba] hover:scale-110 transform transition-all duration-300  hover:-rotate-6 uppercase font-semibold text-center p-[2rem] rounded">
             <CodeBracketSquareIcon className="w-[6rem] h-[6rem] mx-auto text-white" />
             <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">
@@ -26,28 +26,33 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="bg-[#290034ba] hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-[2rem] rounded">
-          <CommandLineIcon className="w-[6rem] h-[6rem] mx-auto text-white" />
-          <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">
-            Backend
-          </h1>
-          <p className="text-[15px] font-normal">
-            In backend, I use Node.js and Express.js to create robust
-            server-side applications, managing business logic and data
-            efficiently. With PostgreSQL, I optimize database schemas for better
-            performance and scalability.
-          </p>
+        <div data-aos="zoom-in" data-aos-delay="300">
+          <div className="bg-[#290034ba] hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-[2rem] rounded">
+            <CommandLineIcon className="w-[6rem] h-[6rem] mx-auto text-white" />
+            <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">
+              Backend
+            </h1>
+            <p className="text-[15px] font-normal">
+              In backend, I use Node.js and Express.js to create robust
+              server-side applications, managing business logic and data
+              efficiently. With PostgreSQL, I optimize database schemas for
+              better performance and scalability.
+            </p>
+          </div>
         </div>
-        <div className="bg-[#290034ba] hover:scale-110 transform transition-all duration-300 hover:rotate-6 uppercase font-semibold text-center p-[2rem] rounded">
-          <ComputerDesktopIcon className="w-[6rem] h-[6rem] mx-auto text-white" />
-          <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">
-            Fullstack
-          </h1>
-          <p className="text-[15px] font-normal">
-            As a full stack developer, I deliver end-to-end web solutions,
-            blending frontend and backend expertise to craft elegant interfaces
-            and seamless server-side integration across your application.
-          </p>
+        <div data-aos="fade-left" data-aos-delay="500">
+          <div className="bg-[#290034ba] hover:scale-110 transform transition-all duration-300 hover:rotate-6 uppercase font-semibold text-center p-[2rem] rounded">
+            <ComputerDesktopIcon className="w-[6rem] h-[6rem] mx-auto text-white" />
+            <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">
+              Fullstack
+            </h1>
+            <p className="text-[15px] font-normal">
+              As a full stack developer, I deliver end-to-end web solutions,
+              blending frontend and backend expertise to craft elegant
+              interfaces and seamless server-side integration across your
+              application.
+            </p>
+          </div>
         </div>
       </div>
     </div>
