@@ -15,9 +15,9 @@ const Hero = () => {
           </h1>
           <TextEffect />
           <p className="mt-[2rem] text-[18px] text-white">
-            I'm Nicolás de Prat Gay, a 25-year-old web developer passionate
+            I&apos;m Nicolás de Prat Gay, a 25-year-old web developer passionate
             about creating engaging, functional online experiences. Since
-            starting in 2023, I've specialized in dynamic, responsive websites
+            starting in 2023, I&apos;ve specialized in dynamic, responsive websites
             that ensure seamless user experiences.
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="w-[500px] hidden bg-[#831ea3] relative lg:flex items-center rounded-full h-[500px]">
           <Image
             src="/images/PPNico.jpg"
-            alt="user"
+            alt="Profile Picture"
             layout="fill"
             className="object-cover rounded-full"
             style={{ objectPosition: "center 20%" }}
