@@ -14,7 +14,7 @@
     content: "";
   }
 
-  .heading{
+  .heading {
     @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold;
   }
 }
@@ -23,4 +23,8 @@
   .bg-custom-gradient {
     background: linear-gradient(to bottom, black 50%, #831ea3 130%);
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

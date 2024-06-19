@@ -15,12 +15,13 @@ const Nav = ({ nav, openNav, closeNav }: Props) => {
         <h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
           Full-Stack<span className="text-[#831ea3]"> Dev</span>
         </h1>
-        <div className="nav-link">HOME</div>
-        <div className="nav-link">SERVICES</div>
-        <div className="nav-link">ABOUT</div>
-        <div className="nav-link">PROJECT</div>
-        <div className="nav-link">BLOG</div>
-        <div className="nav-link">CONTACT</div>
+        <a href="#home" className="nav-link">HOME</a>
+        <a href="#about" className="nav-link">ABOUT</a>
+        <a href="#services" className="nav-link">SERVICES</a>
+        <a href="#skills" className="nav-link">SKILLS</a>
+        <a href="#projects" className="nav-link">PROJECTS</a>
+        <a href="#experience" className="nav-link">EXPERIENCE</a>
+        <a href="#contact" className="nav-link">CONTACT</a>
         <div onClick={nav ? closeNav : openNav} className="md:hidden">
           {nav ? (
             <XMarkIcon className="w-[2rem] h-[2rem] cursor-pointer text-[#831ea3]" />

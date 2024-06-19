@@ -4,6 +4,7 @@ import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
 
+
 const Hero = () => {
   return (
     <div className="h-[88vh]">
@@ -16,7 +17,7 @@ const Hero = () => {
           <TextEffect />
           <p className="mt-[2rem] text-[18px] text-white">
             I&apos;m Nicolás de Prat Gay, a 25-year-old web developer passionate
-            about creating engaging, functional online experiences. Since
+            about creating engaging and functional online experiences. Since
             starting in 2023, I&apos;ve specialized in dynamic, responsive websites
             that ensure seamless user experiences.
           </p>
