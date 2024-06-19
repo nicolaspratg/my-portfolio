@@ -12,12 +12,27 @@ const MobileNav = ({ nav, closeNav }: Props) => {
       className={`fixed ${navAnimation} transform transition-all duration-300 top-0 left-0 right-0 bottom-0 z-[10000] bg-black`}
     >
       <div className="w-full h-full flex flex-col items-center justify-center">
-        <div className="nav-link-mobile">HOME</div>
-        <div className="nav-link-mobile">SERVICES</div>
-        <div className="nav-link-mobile">ABOUT</div>
-        <div className="nav-link-mobile">PROJECT</div>
-        <div className="nav-link-mobile">BLOG</div>
-        <div className="nav-link-mobile">CONTACT</div>
+        <a href="#home" className="nav-link-mobile" onClick={closeNav}>
+          HOME
+        </a>
+        <a href="#about" className="nav-link-mobile" onClick={closeNav}>
+          ABOUT
+        </a>
+        <a href="#services" className="nav-link-mobile" onClick={closeNav}>
+          SERVICES
+        </a>
+        <a href="#skills" className="nav-link-mobile" onClick={closeNav}>
+          SKILLS
+        </a>
+        <a href="#projects" className="nav-link-mobile" onClick={closeNav}>
+          PROJECTS
+        </a>
+        <a href="#experience" className="nav-link-mobile" onClick={closeNav}>
+          EXPERIENCE
+        </a>
+        <a href="#contact" className="nav-link-mobile" onClick={closeNav}>
+          CONTACT
+        </a>
       </div>
     </div>
   );
