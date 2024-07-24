@@ -12,13 +12,13 @@ const Hero = () => {
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[2rem] mt-[10vh] h-[100%] items-center">
         <div>
           <h1 className="text-[35px] md:text-[50px] text-white font-bold">
-            Hi, I&apos;m <span className="text-[#831ea3]">Nicolás</span>
+            Hi, I am <span className="text-[#831ea3]">Nicolás</span>
           </h1>
           <TextEffect />
           <p className="mt-[2rem] text-[18px] text-white">
-            I&apos;m Nicolás de Prat Gay, a 25-year-old web developer passionate
+            A 25-year-old web developer passionate
             about creating engaging and functional online experiences. Since
-            starting in 2023, I&apos;ve specialized in dynamic, responsive websites
+            starting in 2023, I have specialized in dynamic, responsive websites
             that ensure seamless user experiences.
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
