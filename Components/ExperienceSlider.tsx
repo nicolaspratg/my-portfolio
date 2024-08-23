@@ -41,21 +41,27 @@ const ExperienceSlider = () => {
       //   dotListClass="custom-dot-list-style"
     >
       <JobExperience
+        image="/images/dunnoagency_logo.jpg"
+        name="Dunno"
+        role="Full-Stack Developer | Nov. 2023 - Present"
+        description="Develop and maintain full stack web applications using JavaScript/TypeScript, React/Next.js, and CSS/Tailwind CSS on the frontend, along with Node.js, Express.js, DynamoDB, and PostgreSQL on the backend. Collaboration with cross-functional teams and participation in regular team meetings to ensure efficient and scalable solutions"
+      />
+      <JobExperience
         image="/images/contagram.svg"
         name="Contagram"
-        role="Jr. Sales Agent | 2019 - 2020"
+        role="Jr. Sales Agent | Aug. 2019 - Jul. 2020"
         description="Engaged with customers professionally, showcasing product knowledge and highlighting value. Listened to customer needs, provided tailored solutions, and addressed inquiries to build strong relationships and maximize sales. Evaluated client profiles to identify sales opportunities and tailored strategies. Maintained customer info and sales activities in CRM, tracking interactions and monitoring pipelines for effective communication and follow-up."
       />
       <JobExperience
         image="/images/contagram.svg"
         name="Contagram"
-        role="Customer Service Associate | 2019"
+        role="Customer Service Associate | Jul.2019"
         description="Provided prompt, courteous customer assistance, resolving inquiries and complaints. Offered accurate information and recommendations with strong product knowledge. Collaborated with Sales, Product Development, and Operations for seamless service. Documented interactions in CRM and prepared VAT entries and monthly invoices."
       />
       <JobExperience
         image="/images/lengas.png"
         name="Lengas Wear"
-        role="Workshop Manager | 2020 - 2021"
+        role="Workshop Manager | Dec. 2020 - Nov. 2021"
         description="As Workshop Manager at an artisan-wood wristwatch workshop, I oversaw all production operations, including managing schedules, ensuring quality control, and optimizing processes. Leading a team of skilled artisans, I fostered a collaborative environment focused on high-quality, handcrafted timepieces. My effective leadership and dedication to craftsmanship upheld the workshop's industry reputation for excellence."
       />
       <JobExperience
