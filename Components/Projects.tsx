@@ -46,9 +46,10 @@ const Projects = () => {
               <div className="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-black via-black/70 to-transparent flex flex-col items-start justify-center text-white p-4">
                 <h1 className="text-xl">To-Do List</h1>
                 <p className="text-sm hidden sm:block">
-                  Using TypeScript, React, Express.js and Node.js with DynamoDB,
-                  this To-Do List allows you to successfully add tasks, edit
-                  them, and delete them.
+                  Using TypeScript, React, Express.js and Node.js, this To-Do
+                  List allows you to successfully add tasks, edit them, and
+                  delete them. Achieving data persistence through a DynamoDB
+                  database.
                 </p>
               </div>
             </div>
