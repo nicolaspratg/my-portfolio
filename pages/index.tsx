@@ -45,7 +45,7 @@ const HomePage = () => {
       <Head>
         <title>Nicolás de Prat Gay</title>
         <meta name="description" content="Nicolás de Prat Gay's Portfolio" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="overflow-x-hidden bg-custom-gradient bg-center bg-fixed">
         <div>
