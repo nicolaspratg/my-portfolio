@@ -10,6 +10,7 @@ import React, { useEffect, useState } from "react";
 import { Footer } from "@/Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Head from "next/head";
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -40,35 +41,42 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden bg-custom-gradient bg-center bg-fixed">
-      <div>
-        <MobileNav nav={nav} closeNav={closeNav} />
-        <Nav nav={nav} openNav={openNav} closeNav={closeNav} />
-        <div id="home">
-          <Hero />
-        </div>
-        <div className="relative z-[30]">
-          <div id="about">
-            <About />
+    <>
+      <Head>
+        <title>Nicolás de Prat Gay</title>
+        <meta name="description" content="Nicolás de Prat Gay's Portfolio" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+      <div className="overflow-x-hidden bg-custom-gradient bg-center bg-fixed">
+        <div>
+          <MobileNav nav={nav} closeNav={closeNav} />
+          <Nav nav={nav} openNav={openNav} closeNav={closeNav} />
+          <div id="home">
+            <Hero />
           </div>
-          <div id="services">
-            <Services />
-          </div>
-          <div id="skills">
-            <Skills />
-          </div>
-          <div id="projects">
-            <Projects />
-          </div>
-          <div id="experience">
-            <Experience />
-          </div>
-          <div id="contact">
-            <Footer />
+          <div className="relative z-[30]">
+            <div id="about">
+              <About />
+            </div>
+            <div id="services">
+              <Services />
+            </div>
+            <div id="skills">
+              <Skills />
+            </div>
+            <div id="projects">
+              <Projects />
+            </div>
+            <div id="experience">
+              <Experience />
+            </div>
+            <div id="contact">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
