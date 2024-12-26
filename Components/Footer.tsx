@@ -32,7 +32,7 @@ export const Footer = () => {
         </div>
         <div className="flex items-center space-x-6">
           <div className="md:w-[6.5rem] md:h-[6.5rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#831ea3]">
-            <a href="https://wa.me/+5491169114533" target="_blank">
+            <a href="https://wa.me/4306606467794" target="_blank">
               <DevicePhoneMobileIcon className="md:w-[4rem] md:h-[4rem] w-[3.5rem] h-[3.5rem] text-black" />
             </a>
           </div>
