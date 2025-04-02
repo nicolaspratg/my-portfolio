@@ -47,6 +47,12 @@ const ExperienceSlider = () => {
         description="Develop and maintain full stack web applications using JavaScript/TypeScript, React/Next.js, and CSS/Tailwind CSS on the frontend, along with Node.js, Express.js, DynamoDB, and PostgreSQL on the backend. Collaboration with cross-functional teams and participation in regular team meetings to ensure efficient and scalable solutions"
       />
       <JobExperience
+        image="/images/logo-rimlsports.svg"
+        name="Riml Sports"
+        role="Rental Staff | Nov. 2024 - Apr. 2025"
+        description="Responsible for assisting customers with ski and boot fittings, managing transactions at the cash register, and performing end-of-day closures. The role involves coordinating with other shops to send and request equipment, requiring constant communication and collaboration. This position is fast-paced and high-stress, demanding strong teamwork, customer service, and stress management skills."
+      />
+      <JobExperience
         image="/images/contagram.svg"
         name="Contagram"
         role="Jr. Sales Agent | Aug. 2019 - Jul. 2020"
