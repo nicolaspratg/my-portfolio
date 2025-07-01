@@ -16,9 +16,9 @@ const Hero = () => {
           </h1>
           <TextEffect />
           <p className="mt-[2rem] text-[18px] text-white">
-            A 25-year-old web developer passionate
+            A 26-year-old web developer passionate
             about creating engaging and functional online experiences. Since
-            starting in 2023, I have specialized in dynamic, responsive websites
+            starting in 2021, I have specialized in dynamic, responsive websites
             that ensure seamless user experiences.
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
