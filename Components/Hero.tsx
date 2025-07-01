@@ -22,7 +22,7 @@ const Hero = () => {
             that ensure seamless user experiences.
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
-            <a href="/files/CV.pdf" download="CV - Nicoas de Prat Gay.pdf">
+            <a href="/files/CV1.pdf" download="CV - Nicoas de Prat Gay.pdf">
               <button className="px-[2rem] hover:bg-[#831ea3] transition-all duration-200 py-[1rem] text-[18px] font-bold text-white rounded bg-[#46374a59] border border-white flex items-center">
                 <p>Download my CV</p>
                 <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-white mx-[0.5rem]" />
