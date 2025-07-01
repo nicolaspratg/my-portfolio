@@ -41,16 +41,34 @@ const ExperienceSlider = () => {
       //   dotListClass="custom-dot-list-style"
     >
       <JobExperience
-        image="/images/dunnoagency_logo.jpg"
-        name="Dunno"
-        role="Full-Stack Developer | Nov. 2023 - Present"
-        description="Develop and maintain full stack web applications using JavaScript/TypeScript, React/Next.js, and CSS/Tailwind CSS on the frontend, along with Node.js, Express.js, DynamoDB, and PostgreSQL on the backend. Collaboration with cross-functional teams and participation in regular team meetings to ensure efficient and scalable solutions"
-      />
-      <JobExperience
         image="/images/logo-rimlsports.svg"
         name="Riml Sports"
         role="Rental Staff | Nov. 2024 - Apr. 2025"
         description="Responsible for assisting customers with ski and boot fittings, managing transactions at the cash register, and performing end-of-day closures. The role involves coordinating with other shops to send and request equipment, requiring constant communication and collaboration. This position is fast-paced and high-stress, demanding strong teamwork, customer service, and stress management skills."
+      />
+      <JobExperience
+        image="/images/dunnoagency_logo.jpg"
+        name="Dunno"
+        role="Full-Stack Developer | Nov. 2023 - Nov. 2024"
+        description="Develop and maintain full stack web applications using JavaScript/TypeScript, React/Next.js, and CSS/Tailwind CSS on the frontend, along with Node.js, Express.js, DynamoDB, and PostgreSQL on the backend. Collaboration with cross-functional teams and participation in regular team meetings to ensure efficient and scalable solutions"
+      />
+      <JobExperience
+        image="/images/plannet.jpg"
+        name="plannet.cc"
+        role="Full-Stack Developer | Aug. 2022 - Aug. 2023"
+        description="In my role as a full-stack developer at plannet.cc, I focused on delivering robust software solutions through agile practices. I actively engaged with clients and team members to ensure seamless project coordination. My expertise in JavaScript frameworks and Node.js allowed me to write clean, maintainable code, significantly improving product iteration and client satisfaction."
+      />
+      <JobExperience
+        image="/images/plannet.jpg"
+        name="plannet.cc"
+        role="Frontend Developer | Oct. 2021 - Aug. 2022"
+        description="As a Frontend Developer at plannet.cc, I focused on creating user-centric MVPs and SPAs, transforming Figma designs into interactive web applications. My role involved integrating backend microservices to ensure a smooth data experience, which significantly enhanced user satisfaction and engagement."
+      />
+      <JobExperience
+        image="/images/lengas.png"
+        name="Lengas Wear"
+        role="Workshop Manager | Aug. 2020 - Apr. 2021"
+        description="As Workshop Manager at an artisan-wood wristwatch workshop, I oversaw all production operations, including managing schedules, ensuring quality control, and optimizing processes. Leading a team of skilled artisans, I fostered a collaborative environment focused on high-quality, handcrafted timepieces. My effective leadership and dedication to craftsmanship upheld the workshop's industry reputation for excellence."
       />
       <JobExperience
         image="/images/contagram.svg"
@@ -63,12 +81,6 @@ const ExperienceSlider = () => {
         name="Contagram"
         role="Customer Service Associate | Jul.2019"
         description="Provided prompt, courteous customer assistance, resolving inquiries and complaints. Offered accurate information and recommendations with strong product knowledge. Collaborated with Sales, Product Development, and Operations for seamless service. Documented interactions in CRM and prepared VAT entries and monthly invoices."
-      />
-      <JobExperience
-        image="/images/lengas.png"
-        name="Lengas Wear"
-        role="Workshop Manager | Dec. 2020 - Nov. 2021"
-        description="As Workshop Manager at an artisan-wood wristwatch workshop, I oversaw all production operations, including managing schedules, ensuring quality control, and optimizing processes. Leading a team of skilled artisans, I fostered a collaborative environment focused on high-quality, handcrafted timepieces. My effective leadership and dedication to craftsmanship upheld the workshop's industry reputation for excellence."
       />
       <JobExperience
         image="/images/Logo_TECHO.webp"
