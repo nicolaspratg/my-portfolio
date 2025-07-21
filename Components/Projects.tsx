@@ -56,7 +56,7 @@ const Projects = () => {
           </div>
         </a>
         <a
-          href="https://github.com/nicolaspratg/Rick-And-Morty"
+          href="https://rick-and-morty-peach-zeta.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
