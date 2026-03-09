@@ -6,33 +6,20 @@ interface Props {
   skill3: string;
   level1: string;
 }
+
 const SkillsLanguage = ({ skill1, skill2, skill3, level1 }: Props) => {
+  const skills = [skill1, skill2, skill3];
+
   return (
-    <div>
-      <div className="relative mb-[1rem]">
-        <h1 className="p-5 my-[10px] w-[100%] uppercase bg-[#290034ba] rounded-sm text-white text-[20px] font-bold">
-          {skill1}
-        </h1>
-        <span
-          className={`${level1} bottom-0 h-[6px] absolute bg-white`}
-        ></span>
-      </div>
-      <div className="relative mb-[1rem]">
-        <h1 className="p-5 my-[10px] w-[100%] uppercase bg-[#290034ba] rounded-sm text-white text-[20px] font-bold">
-          {skill2}
-        </h1>
-        <span
-          className={`${level1} bottom-0 h-[6px] absolute bg-white`}
-        ></span>
-      </div>
-      <div className="relative mb-[1rem]">
-        <h1 className="p-5 my-[10px] w-[100%] uppercase bg-[#290034ba] rounded-sm text-white text-[20px] font-bold">
-          {skill3}
-        </h1>
-        <span
-          className={`${level1} bottom-0 h-[6px] absolute bg-white`}
-        ></span>
-      </div>
+    <div className="glass-card">
+      {skills.map((skill) => (
+        <div key={skill} className="mb-4 last:mb-0">
+          <h4 className="rounded-xl border border-[#294463] bg-[#152c46] px-4 py-4 text-[18px] font-semibold uppercase tracking-[0.08em] text-slate-100">
+            {skill}
+          </h4>
+          <span className={`${level1} mt-2 block h-[6px] rounded-full bg-[#831ea3]`}></span>
+        </div>
+      ))}
     </div>
   );
 };

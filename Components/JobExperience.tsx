@@ -10,20 +10,19 @@ interface Props {
 
 const JobExperience = ({ name, role, image, description }: Props) => {
   return (
-    <div className="flex flex-col text-center justify-center">
+    <article className="mx-auto flex max-w-4xl flex-col justify-center text-center">
       <Image
         src={image}
         alt={name}
-        width={100}
-        height={100}
-        objectFit="contain"
-        className="mx-auto mb-[2rem] rounded"
+        width={110}
+        height={110}
+        style={{ objectFit: "contain" }}
+        className="mx-auto mb-6 rounded-xl bg-white p-2"
       />
-      <h1 className="text-[25px] text-white mt-[1rem]"></h1>
-      <p className="text-[20px] text-white opacity-90 mt-[0.5rem]">{name}</p>
-      <p className="text-[18px] text-white opacity-75 mt-[0.5rem]">{role}</p>
-      <p className="text-[16px] text-white opacity-50 w-[90%] md:w-[50%] mx-auto">{description}</p>
-    </div>
+      <p className="text-[30px] font-bold text-slate-100">{name}</p>
+      <p className="mt-1 text-[18px] font-semibold text-[#d6a5e4]">{role}</p>
+      <p className="mx-auto mt-4 max-w-3xl text-[16px] leading-relaxed text-slate-300">{description}</p>
+    </article>
   );
 };
 

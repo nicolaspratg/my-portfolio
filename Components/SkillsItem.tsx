@@ -5,19 +5,16 @@ interface Props {
   year: string;
   description: string;
 }
+
 const SkillsItem = ({ title, year, description }: Props) => {
   return (
-    <div className="mb-[4rem] md:mb-[8rem]">
-      <span className="px-[2rem] text-white py-[0.9rem] border-[2px] border text-[18px] font-bold rounded">
+    <article className="glass-card mb-6">
+      <span className="inline-block rounded-full border border-[#831ea352] bg-[#831ea314] px-4 py-2 text-sm font-semibold tracking-wide text-[#d6a5e4]">
         {year}
       </span>
-      <h1 className="mt-[2rem] capitalize font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white">
-        {title}
-      </h1>
-      <p className="text-white font-normal w-[80%] text-[17px] opacity-80">
-        {description}
-      </p>
-    </div>
+      <h3 className="mt-4 text-[26px] font-bold text-slate-100">{title}</h3>
+      <p className="mt-3 text-[16px] leading-relaxed text-slate-300">{description}</p>
+    </article>
   );
 };
 

@@ -1,112 +1,109 @@
 import Image from "next/image";
 import React from "react";
 
+const featuredProject = {
+  href: "https://conception-dev-assessment.vercel.app/playground",
+  repo: "https://github.com/nicolaspratg/Conception.dev-Assessment",
+  title: "Conception.dev Assessment",
+  subtitle: "Visual Mock-up Generator",
+  description:
+    "A SvelteKit + TypeScript assessment that transforms natural language prompts into interactive architecture diagrams using AI-generated JSON schema and a responsive visual renderer.",
+  stack: ["SvelteKit", "TypeScript", "OpenAI API", "Tailwind", "Playwright"],
+};
+
+const projects = [
+  {
+    href: "https://github.com/PetPalacePF/petpalace",
+    image: "/images/PetPalace Shop.png",
+    title: "PetPalace",
+    description: "A pet supplies e-commerce app built with React, Node.js, Express.js, and PostgreSQL.",
+  },
+  {
+    href: "https://github.com/nicolaspratg/toDoList-AndesDocs",
+    image: "/images/To-do list.png",
+    title: "To-Do List",
+    description: "Task manager built with TypeScript, React, Express.js, and DynamoDB persistence.",
+  },
+  {
+    href: "https://rick-and-morty-peach-zeta.vercel.app/",
+    image: "/images/RnM Detail.png",
+    title: "Rick and Morty API",
+    description: "Character explorer with filters and detail views using React.js and API integration.",
+  },
+  {
+    href: "https://github.com/nicolaspratg/Countries-PI",
+    image: "/images/Countries Home.png",
+    title: "Countries Project",
+    description: "Country finder built with the PERN stack using CRUD and modular architecture.",
+  },
+];
+
 const Projects = () => {
   return (
-    <div className="pt-[4rem] md:pt-[8rem] pb-[1rem]">
-      <h1 className="heading mb-[2rem]">Projects</h1>
-      <div className="w-[80%] mx-auto pt-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[2rem]">
-        <a
-          href="https://github.com/PetPalacePF/petpalace"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div data-aos="fade-up" data-aos-delay="300" className="relative">
-            <div className="transform cursor-pointer hover:-translate-y-4 transition-all duration-500 relative w-[100%] h-[200px] md:h-[300px]">
-              <Image
-                src="/images/PetPalace Shop.png"
-                alt="portfolio"
-                layout="fill"
-                className="object-cover"
-              />
-              <div className="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-black via-black/70 to-transparent flex flex-col items-start justify-center text-white p-4">
-                <h1 className="text-xl">PetPalace</h1>
-                <p className="text-sm hidden sm:block">
-                  An e-commerce for pet supplies. Harnessing the power of React
-                  with JavaScript for the frontend and Node.js with Express.js
-                  for the backend. Using a relational database with PostgreSQL.
-                </p>
-              </div>
-            </div>
+    <section className="section-space">
+      <div className="section-shell">
+        <h2 className="heading">
+          Selected <span className="accent-text">Projects</span>
+        </h2>
+
+        <article className="glass-card mt-12 overflow-hidden border-[#831ea366] bg-[linear-gradient(135deg,#1b1535_0%,#1b1530_55%,#2c1238_100%)] p-8 md:p-10">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="rounded-full border border-[#831ea366] bg-[#831ea31f] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#e0b6ed]">
+              Featured Project
+            </span>
+            <span className="rounded-full border border-[#4e3a72] bg-[#1b15308f] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-slate-200">
+              Main Highlight
+            </span>
           </div>
-        </a>
-        <a
-          href="https://github.com/nicolaspratg/toDoList-AndesDocs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div data-aos="fade-up" data-aos-delay="400" className="relative">
-            <div className="transform cursor-pointer hover:-translate-y-4 transition-all duration-500 relative w-[100%] h-[200px] md:h-[300px]">
-              <Image
-                src="/images/To-do list.png"
-                alt="portfolio"
-                layout="fill"
-                className="object-cover"
-              />
-              <div className="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-black via-black/70 to-transparent flex flex-col items-start justify-center text-white p-4">
-                <h1 className="text-xl">To-Do List</h1>
-                <p className="text-sm hidden sm:block">
-                  Using TypeScript, React, Express.js and Node.js, this To-Do
-                  List allows you to successfully add tasks, edit them, and
-                  delete them. Achieving data persistence through a DynamoDB
-                  database.
-                </p>
-              </div>
-            </div>
+
+          <h3 className="mt-5 text-[34px] font-bold leading-tight text-slate-100 sm:text-[44px]">
+            {featuredProject.title}
+          </h3>
+          <p className="mt-2 text-lg font-semibold text-[#d6a5e4]">{featuredProject.subtitle}</p>
+          <p className="mt-5 max-w-3xl text-[17px] leading-relaxed text-slate-200">{featuredProject.description}</p>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            {featuredProject.stack.map((tech) => (
+              <span key={tech} className="rounded-full border border-[#4e3a72] bg-[#1b153095] px-3 py-1 text-xs font-semibold tracking-[0.08em] text-slate-200">
+                {tech}
+              </span>
+            ))}
           </div>
-        </a>
-        <a
-          href="https://rick-and-morty-peach-zeta.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div data-aos="fade-up" data-aos-delay="500" className="relative">
-            <div className="transform cursor-pointer hover:-translate-y-4 transition-all duration-500 relative w-[100%] h-[200px] md:h-[300px]">
-              <Image
-                src="/images/RnM Detail.png"
-                alt="portfolio"
-                layout="fill"
-                className="object-cover"
-              />
-              <div className="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-black via-black/70 to-transparent flex flex-col items-start justify-center text-white p-4">
-                <h1 className="text-xl">Rick and Morty API</h1>
-                <p className="text-sm hidden sm:block">
-                  React.js for frontend interface, providing a sleek and
-                  intuitive experience. Character finder through unique ID
-                  search. Access to specific characters. Filtering options,
-                  allowing users to narrow down their search results.
-                </p>
-              </div>
-            </div>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href={featuredProject.href} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              Live Demo
+            </a>
+            <a href={featuredProject.repo} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+              View GitHub
+            </a>
           </div>
-        </a>
-        <a
-          href="https://github.com/nicolaspratg/Countries-PI"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div data-aos="fade-up" data-aos-delay="600" className="relative">
-            <div className="transform cursor-pointer hover:-translate-y-4 transition-all duration-500 relative w-[100%] h-[200px] md:h-[300px]">
-              <Image
-                src="/images/Countries Home.png"
-                alt="portfolio"
-                layout="fill"
-                className="object-cover"
-              />
-              <div className="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-black via-black/70 to-transparent flex flex-col items-start justify-center text-white p-4">
-                <h1 className="text-xl">Countries Project</h1>
-                <p className="text-sm hidden sm:block">
-                  Utilizing the PERN stack (PostgreSQL, Express, React and Node)
-                  I created an intuitive Country Finder with a local PSQL
-                  Database, using CRUD. Component-based and modular
-                  architechture for better understanding.
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
+        </article>
+
+        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+          {projects.map((project, index) => (
+            <a key={project.title} href={project.href} target="_blank" rel="noopener noreferrer">
+              <article data-aos="fade-up" data-aos-delay={300 + index * 100} className="glass-card h-full overflow-hidden p-0 transition duration-300 hover:-translate-y-2 hover:border-[#831ea366]">
+                <div className="relative h-[240px] w-full overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition duration-500 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0f1724] via-[#0f172477] to-transparent" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-[28px] font-bold text-slate-100">{project.title}</h3>
+                  <p className="mt-2 text-[16px] leading-relaxed text-slate-300">{project.description}</p>
+                </div>
+              </article>
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
