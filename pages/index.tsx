@@ -12,6 +12,9 @@ import "aos/dist/aos.css";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const ogImageUrl = `${siteUrl}/images/PPNico.jpg`;
+
 const HomePage = () => {
   const [nav, setNav] = useState(false);
   const openNav = () => setNav(true);
@@ -33,7 +36,18 @@ const HomePage = () => {
       <Head>
         <title>Nicolas de Prat Gay | Portfolio</title>
         <meta name="description" content="Portfolio of Nicolas de Prat Gay, full-stack web developer." />
+        <meta property="og:title" content="Nicolas de Prat Gay | Portfolio" />
+        <meta property="og:description" content="Portfolio of Nicolas de Prat Gay, full-stack web developer." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image:alt" content="Portrait of Nicolas de Prat Gay for the portfolio preview image." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nicolas de Prat Gay | Portfolio" />
+        <meta name="twitter:description" content="Portfolio of Nicolas de Prat Gay, full-stack web developer." />
+        <meta name="twitter:image" content={ogImageUrl} />
         <link rel="icon" href="/images/favicon.png" />
+        <link rel="canonical" href={siteUrl} />
       </Head>
 
       <div className="overflow-x-hidden bg-custom-gradient bg-center bg-fixed">
