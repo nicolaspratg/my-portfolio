@@ -1,5 +1,13 @@
-import { MapPinIcon } from "@heroicons/react/20/solid";
+import { MapPinIcon } from "@heroicons/react/24/outline";
+import dynamic from "next/dynamic";
 import React from "react";
+
+const ViennaMap = dynamic(() => import("./ViennaMap"), {
+  ssr: false,
+  loading: () => <div className="h-full w-full rounded-lg bg-[#120d20]" />,
+});
+
+const craftTags = ["Clean Code", "Performance", "Accessibility", "DX", "Design Systems"];
 
 const About = () => {
   return (
@@ -11,40 +19,63 @@ const About = () => {
         </h2>
 
         <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-6 lg:grid-rows-2">
-          <article className="glass-card lg:col-span-4 lg:row-span-2">
+          {/* Bio */}
+          <article className="glass-card flex flex-col lg:col-span-4 lg:row-span-2">
             <p className="text-[17px] leading-relaxed text-slate-200">
               I&apos;m someone who values clarity, depth, and intention in the way ideas are expressed and built.
               I&apos;m naturally curious and tend to question surface-level answers, not to challenge for the sake of it,
               but to truly understand how things work and why they matter. I care about quality and coherence, and I&apos;m
               most engaged when I can refine, improve, and align ideas until they accurately reflect their purpose.
             </p>
-          </article>
-
-          <article className="glass-card relative overflow-hidden lg:col-span-2">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_10%,rgba(179,79,205,0.35),transparent_35%),radial-gradient(circle_at_20%_70%,rgba(131,30,163,0.3),transparent_35%)]" />
-            <div className="relative z-10">
-              <p className="text-xs uppercase tracking-[0.14em] text-slate-400">Location</p>
-              <p className="mt-2 text-2xl font-bold text-slate-100">Vienna</p>
-              <div className="mt-4 rounded-xl border border-[#4e3a72] bg-[#120d20] p-4">
-                <div className="flex items-center gap-2 text-[#d6a5e4]">
-                  <MapPinIcon className="h-5 w-5" />
-                  <span className="text-sm font-semibold">Austria</span>
-                </div>
-                <div className="mt-3 h-20 rounded-lg border border-[#3a2b57] bg-[linear-gradient(135deg,#1c1430_0%,#2a1840_50%,#171028_100%)]" />
+            <div className="mt-auto border-t border-[#3a2b57] pt-5">
+              <p className="mb-3 text-xs uppercase tracking-[0.14em] text-slate-400">What I care about</p>
+              <div className="flex flex-wrap gap-2">
+                {craftTags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-[#4e3a72] bg-[#1b153066] px-3 py-1 text-xs font-medium text-slate-300"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
           </article>
 
-          <article className="glass-card lg:col-span-1">
-            <p className="text-xs uppercase tracking-[0.14em] text-slate-400">Focus</p>
-            <p className="mt-2 text-base font-semibold text-slate-100">Frontend Architecture</p>
-            <p className="mt-2 text-sm text-slate-300">Readable systems and scalable components.</p>
+          {/* Location */}
+          <article className="glass-card relative overflow-hidden lg:col-span-2">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_10%,rgba(179,79,205,0.35),transparent_35%),radial-gradient(circle_at_20%_70%,rgba(131,30,163,0.3),transparent_35%)]" />
+            <div className="relative z-10 flex h-full flex-col">
+              <p className="text-xs uppercase tracking-[0.14em] text-slate-400">Location</p>
+              <div className="mt-1 flex items-center gap-2">
+                <p className="text-2xl font-bold text-slate-100">Vienna</p>
+                <div className="flex items-center gap-1.5 rounded-full border border-[#4e3a72] bg-[#1b1530cc] px-2.5 py-0.5">
+                  <MapPinIcon className="h-3.5 w-3.5 text-[#b34fcd]" />
+                  <span className="text-xs font-medium text-slate-300">Austria</span>
+                </div>
+              </div>
+              <div className="mt-3 flex-1 overflow-hidden rounded-xl border border-[#4e3a72]" style={{ minHeight: "140px" }}>
+                <ViennaMap />
+              </div>
+            </div>
           </article>
 
-          <article className="glass-card lg:col-span-1">
-            <p className="text-xs uppercase tracking-[0.14em] text-slate-400">Workflow</p>
-            <p className="mt-2 text-base font-semibold text-slate-100">Refine and Improve</p>
-            <p className="mt-2 text-sm text-slate-300">I iterate fast, then polish for clarity and quality.</p>
+          {/* Status */}
+          <article className="glass-card relative overflow-hidden lg:col-span-2">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_90%,rgba(131,30,163,0.2),transparent_50%)]" />
+            <div className="relative z-10">
+              <p className="text-xs uppercase tracking-[0.14em] text-slate-400">Status</p>
+              <div className="mt-3 flex items-center gap-2.5">
+                <span className="relative flex h-2.5 w-2.5 shrink-0">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#831ea3] opacity-75" />
+                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#b34fcd]" />
+                </span>
+                <p className="text-base font-semibold text-slate-100">Open to opportunities</p>
+              </div>
+              <p className="mt-3 text-sm leading-relaxed text-slate-300">
+                Based in Vienna, available for remote positions and freelance projects.
+              </p>
+            </div>
           </article>
         </div>
       </div>

@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install react-leaflet leaflet @types/leaflet)",
+      "Bash(npm install react-leaflet@4 leaflet @types/leaflet)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm run build)",
+      "Bash(where npm)",
+      "Bash(where node)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001)",
+      "Bash(where npx)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s http://localhost:3001/)",
+      "Bash(curl -sv http://localhost:3001/)",
+      "Bash(npx next build)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(tasklist)",
+      "Bash(curl -s -L http://localhost:3001/)",
+      "Bash(taskkill /PID 1424 /F)",
+      "Bash(cmd /c \"taskkill /PID 1424 /F\")",
+      "Bash(cmd /c \"taskkill /PID 1424 /F && echo killed\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(npx next lint)",
+      "Bash(npx next build --no-lint)"
+    ]
+  }
+}
