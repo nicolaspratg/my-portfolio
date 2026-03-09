@@ -16,25 +16,25 @@ const projects = [
     href: "https://github.com/PetPalacePF/petpalace",
     image: "/images/PetPalace Shop.png",
     title: "PetPalace",
-    description: "A pet supplies e-commerce app built with React, Node.js, Express.js, and PostgreSQL.",
+    description: "Full e-commerce with product catalog, cart, and user auth — built end-to-end with React, Express.js, and PostgreSQL.",
   },
   {
     href: "https://github.com/nicolaspratg/toDoList-AndesDocs",
     image: "/images/To-do list.png",
     title: "To-Do List",
-    description: "Task manager built with TypeScript, React, Express.js, and DynamoDB persistence.",
+    description: "TypeScript-safe task manager with an Express REST API, DynamoDB persistence, and optimistic UI updates.",
   },
   {
     href: "https://rick-and-morty-peach-zeta.vercel.app/",
     image: "/images/RnM Detail.png",
     title: "Rick and Morty API",
-    description: "Character explorer with filters and detail views using React.js and API integration.",
+    description: "Character explorer with dynamic filtering, pagination, and detail views — powered by the public Rick & Morty API.",
   },
   {
     href: "https://github.com/nicolaspratg/Countries-PI",
     image: "/images/Countries Home.png",
     title: "Countries Project",
-    description: "Country finder built with the PERN stack using CRUD and modular architecture.",
+    description: "Search and filter 250+ countries with CRUD operations, Redux state management, and a full PERN stack backend.",
   },
 ];
 

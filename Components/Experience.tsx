@@ -3,12 +3,13 @@ import ExperienceSlider from "./ExperienceSlider";
 
 const Experience = () => {
   return (
-    <section data-aos="zoom-in-up" className="section-space">
+    <section data-aos="fade-up" className="section-space">
       <div className="section-shell">
-        <h2 className="heading">
-          Work <span className="accent-text">Experience</span>
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-300">Experience</p>
+        <h2 className="mt-3 max-w-3xl text-[30px] font-bold leading-tight text-slate-100 sm:text-[38px]">
+          Where I&apos;ve <span className="accent-text">shipped</span>
         </h2>
-        <div className="glass-card mt-12">
+        <div className="mt-10">
           <ExperienceSlider />
         </div>
       </div>
