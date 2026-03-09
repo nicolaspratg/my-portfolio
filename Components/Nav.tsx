@@ -12,7 +12,7 @@ const Nav = ({ nav, openNav, closeNav }: Props) => {
     <header className="fixed top-0 z-[10000] h-[11vh] w-full border-b border-[#294463] bg-[#0f1724dd] backdrop-blur-lg">
       <div className="section-shell flex h-full items-center justify-between">
         <a href="#home" className="text-[20px] font-bold tracking-[0.08em] text-slate-100 sm:text-[24px]">
-          NICO <span className="accent-text">DEV</span>
+          Nicolás de Prat Gay
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex">
