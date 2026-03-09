@@ -36,6 +36,7 @@ const devRoles: DevRole[] = [
     company: "Dunno Agency",
     role: "Full-Stack Developer",
     period: "Nov. 2023 – Nov. 2024",
+    location: "Buenos Aires",
     bullets: [
       "Developed and maintained production-grade full-stack applications.",
       "Worked across REST APIs, relational and NoSQL databases.",
@@ -48,6 +49,7 @@ const devRoles: DevRole[] = [
     company: "plannet.cc",
     role: "Full-Stack Developer",
     period: "Aug. 2022 – Aug. 2023",
+    location: "Buenos Aires",
     bullets: [
       "Delivered software solutions through agile, client-facing workflows.",
       "Improved product quality and iteration speed through structured code reviews.",
@@ -59,6 +61,7 @@ const devRoles: DevRole[] = [
     company: "plannet.cc",
     role: "Frontend Developer",
     period: "Oct. 2021 – Aug. 2022",
+    location: "Buenos Aires",
     bullets: [
       "Built user-centered MVPs and SPAs directly from Figma designs.",
       "Integrated backend microservices for smooth, data-driven user experiences.",
