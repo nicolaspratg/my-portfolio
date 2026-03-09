@@ -47,7 +47,19 @@ const HomePage = () => {
         <meta name="twitter:description" content="Portfolio of Nicolas de Prat Gay, full-stack web developer." />
         <meta name="twitter:image" content={ogImageUrl} />
         <link rel="icon" href="/images/favicon.png" />
-        <link rel="canonical" href={siteUrl} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Nicolas de Prat Gay | Full-Stack Developer" />
+        <meta property="og:description" content="Full-stack developer based in Vienna. Building fast, clear, and scalable web applications with React, TypeScript, and Node.js." />
+        <meta property="og:image" content="https://nicodev.vercel.app/images/PPNico.jpg" />
+        <meta property="og:url" content="https://nicodev.vercel.app" />
+
+        {/* Twitter / X */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nicolas de Prat Gay | Full-Stack Developer" />
+        <meta name="twitter:description" content="Full-stack developer based in Vienna. Building fast, clear, and scalable web applications with React, TypeScript, and Node.js." />
+        <meta name="twitter:image" content="https://nicodev.vercel.app/images/PPNico.jpg" />
       </Head>
 
       <div className="overflow-x-hidden bg-custom-gradient bg-center bg-fixed">
