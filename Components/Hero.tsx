@@ -10,13 +10,13 @@ const Hero = () => {
 
       <div className="section-shell grid gap-x-8 pb-20 pt-10 lg:grid-cols-2 lg:items-center lg:py-28">
         <div className="relative z-10">
-          <div className="inline-flex items-center gap-3 rounded-full border border-[#831ea366] bg-[#831ea320] px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#e6c7f0]">
+          <a href="#projects" className="inline-flex items-center gap-3 rounded-full border border-[#831ea366] bg-[#831ea320] px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#e6c7f0] hover:border-[#831ea3aa] hover:bg-[#831ea340] transition-colors">
             <span>What&apos;s new</span>
             <span className="inline-flex items-center gap-1 text-slate-200 normal-case tracking-normal">
               Mockup Generator
               <ChevronRightIcon className="h-4 w-4 text-[#d6a5e4]" />
             </span>
-          </div>
+          </a>
 
           <h1 className="mt-8 text-4xl font-bold leading-tight text-slate-100 sm:text-5xl lg:text-6xl">
             Building robust web apps that are

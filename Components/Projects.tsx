@@ -4,8 +4,8 @@ import React from "react";
 const featuredProject = {
   href: "https://conception-dev-assessment.vercel.app/playground",
   repo: "https://github.com/nicolaspratg/Conception.dev-Assessment",
-  title: "Conception.dev Assessment",
-  subtitle: "Visual Mock-up Generator",
+  title: "Mockup Generator",
+  subtitle: "Natural language prompt to visual architecture diagram generator",
   description:
     "A SvelteKit + TypeScript assessment that transforms natural language prompts into interactive architecture diagrams using AI-generated JSON schema and a responsive visual renderer.",
   stack: ["SvelteKit", "TypeScript", "OpenAI API", "Tailwind", "Playwright"],
