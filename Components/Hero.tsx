@@ -1,7 +1,9 @@
 import { ArrowDownTrayIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
+import dynamic from "next/dynamic";
 import React from "react";
-import Particle from "./Particle";
 import TextEffect from "./TextEffect";
+
+const Particle = dynamic(() => import("./Particle"), { ssr: false });
 
 const Hero = () => {
   return (

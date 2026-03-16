@@ -6,7 +6,7 @@ const TextEffect = () => {
       sequence={[
         "Full-Stack Developer.",
         1500,
-        "Frontend Architecture.",
+        "Frontend Architect.",
         1500,
         "Based in Vienna.",
         1500,
