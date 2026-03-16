@@ -1,16 +1,11 @@
 import { ArrowDownTrayIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
-import dynamic from "next/dynamic";
 import React from "react";
 import TextEffect from "./TextEffect";
-
-const Particle = dynamic(() => import("./Particle"), { ssr: false });
 
 const Hero = () => {
   return (
     <section className="relative isolate overflow-hidden pt-[12vh]">
-      <Particle />
-
-      <div className="section-shell grid gap-x-8 pb-20 pt-10 lg:grid-cols-2 lg:items-center lg:py-28">
+<div className="section-shell grid gap-x-8 pb-20 pt-10 lg:grid-cols-2 lg:items-center lg:py-28">
         <div className="relative z-10">
           <a href="#projects" className="inline-flex items-center gap-3 rounded-full border border-[#831ea366] bg-[#831ea320] px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#e6c7f0] hover:border-[#831ea3aa] hover:bg-[#831ea340] transition-colors">
             <span>What&apos;s new</span>
