@@ -10,7 +10,7 @@ const Hero = () => {
           <a href="#projects" className="inline-flex items-center gap-3 rounded-full border border-[#831ea366] bg-[#831ea320] px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#e6c7f0] hover:border-[#831ea3aa] hover:bg-[#831ea340] transition-colors">
             <span>What&apos;s new</span>
             <span className="inline-flex items-center gap-1 text-slate-200 normal-case tracking-normal">
-              Mockup Generator
+              AI-powered travel itinerary planner
               <ChevronRightIcon className="h-4 w-4 text-[#d6a5e4]" />
             </span>
           </a>
