@@ -1,40 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nicolas de Prat Gay — Portfolio
 
-## Getting Started
+Personal portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. Showcases my experience, projects, and technical skills as a full-stack developer.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Layer | Technologies |
+|---|---|
+| Frontend | Next.js 14, React 18, TypeScript, Tailwind CSS |
+| Animations | AOS (Animate On Scroll), react-type-animation |
+| Map | Leaflet + react-leaflet |
+| Icons | Heroicons |
+| Deployment | Vercel |
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Responsive design — works across all screen sizes
+- Scroll-triggered animations via AOS
+- Interactive map with a custom Leaflet component
+- Optimized images with `next/image`
+- SEO-ready with Open Graph and Twitter card meta tags
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## Sections
 
-To learn more about Next.js, take a look at the following resources:
+- **Hero** — introduction with animated typing effect
+- **About** — background and current location
+- **Services** — what I build (Product UIs, Scalable APIs, End-to-end Delivery)
+- **Skills** — full tech stack grouped by category
+- **Projects** — selected work with links
+- **Experience** — dev timeline from 2021 to present
+- **Contact** — footer with links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## About Me
 
-## Deploy on Vercel
+Full-stack developer with 4+ years of experience building production applications. My stack centers on the JavaScript/TypeScript ecosystem — React, Next.js, Node.js, PostgreSQL — with a focus on clean architecture, maintainable code, and reliable delivery.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Recent roles:
+- **Nuela** — Full-Stack Developer (Jul 2025 – Dec 2025, Madrid)
+- **Dunno Agency** — Full-Stack Developer (Nov 2023 – Nov 2024, Buenos Aires)
+- **plannet.cc** — Full-Stack & Frontend Developer (Oct 2021 – Aug 2023, Buenos Aires)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open to frontend and full-stack opportunities. [Let's connect on LinkedIn.](https://www.linkedin.com/in/nicolasdepratgay)
