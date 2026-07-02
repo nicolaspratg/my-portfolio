@@ -8,7 +8,7 @@ const TextEffect = () => {
         1500,
         "Frontend Architect.",
         1500,
-        "Based in Vienna.",
+        "Based in Buenos Aires.",
         1500,
         "Shipping since 2021.",
         1500,

@@ -2,7 +2,7 @@ import { MapPinIcon } from "@heroicons/react/24/outline";
 import dynamic from "next/dynamic";
 import React from "react";
 
-const ViennaMap = dynamic(() => import("./ViennaMap"), {
+const LocationMap = dynamic(() => import("./LocationMap"), {
   ssr: false,
   loading: () => <div className="h-full w-full rounded-lg bg-[#120d20]" />,
 });
@@ -48,14 +48,14 @@ const About = () => {
             <div className="relative z-10 flex h-full flex-col">
               <p className="text-xs uppercase tracking-[0.14em] text-slate-400">Location</p>
               <div className="mt-1 flex items-center gap-2">
-                <p className="text-2xl font-bold text-slate-100">Vienna</p>
+                <p className="text-2xl font-bold text-slate-100">Buenos Aires</p>
                 <div className="flex items-center gap-1.5 rounded-full border border-[#4e3a72] bg-[#1b1530cc] px-2.5 py-0.5">
                   <MapPinIcon className="h-3.5 w-3.5 text-[#b34fcd]" />
-                  <span className="text-xs font-medium text-slate-300">Austria</span>
+                  <span className="text-xs font-medium text-slate-300">Argentina</span>
                 </div>
               </div>
               <div className="mt-3 flex-1 overflow-hidden rounded-xl border border-[#4e3a72]" style={{ minHeight: "140px" }}>
-                <ViennaMap />
+                <LocationMap />
               </div>
             </div>
           </article>
@@ -73,7 +73,7 @@ const About = () => {
                 <p className="text-base font-semibold text-slate-100">Open to opportunities</p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-slate-300">
-                Based in Vienna, available for remote positions and freelance projects.
+                Based in Buenos Aires, available for remote positions and freelance projects.
               </p>
             </div>
           </article>

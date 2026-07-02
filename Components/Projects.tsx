@@ -2,16 +2,22 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 const featuredProject = {
-  href: "https://waypoint-lime.vercel.app",
-  repo: "https://github.com/nicolaspratg/Waypoint",
-  title: "Waypoint",
-  subtitle: "AI-powered travel itinerary planner",
+  repo: "https://github.com/nicolaspratg/Mogul",
+  title: "Mogul",
+  subtitle: "WhatsApp booking chatbot for ski rental shops",
   description:
-    "Waypoint turns travel ideas into detailed, personalized day-by-day itineraries in seconds. Built with Next.js and the Claude AI API, it handles auth via Clerk, persists plans with Drizzle ORM on Postgres, and processes payments through Stripe.",
-  stack: ["Next.js", "TypeScript", "Claude AI", "Clerk", "Drizzle ORM", "Stripe", "Tailwind"],
+    "Mogul lets ski rental customers book equipment through a guided WhatsApp conversation — no app, no account needed. A multi-tenant Node.js backend drives a 12-step booking state machine and pushes confirmed reservations straight into the shop's Easyrent system via SOAP and REST, with webhook signature verification, message deduplication, retries, and a durable queue on PostgreSQL.",
+  stack: ["Node.js", "TypeScript", "Express", "PostgreSQL", "Meta Cloud API", "SOAP/REST"],
 };
 
 const projects = [
+  {
+    href: "https://waypoint-lime.vercel.app",
+    image: "",
+    title: "Waypoint",
+    description:
+      "AI travel planner that turns trip ideas into day-by-day itineraries — built with Next.js and Claude AI, with Clerk auth, Drizzle ORM on Postgres, and Stripe payments.",
+  },
   {
     href: "https://conception-dev-assessment.vercel.app/playground",
     image: "",
@@ -102,10 +108,7 @@ const Projects = () => {
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={featuredProject.href} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              Live Demo
-            </a>
-            <a href={featuredProject.repo} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+            <a href={featuredProject.repo} target="_blank" rel="noopener noreferrer" className="btn-primary">
               View GitHub
             </a>
           </div>
